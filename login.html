@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login - THE PERFUME VAULT</title>
+  <style>
+    .logo-container {
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .logo-container img {
+      width: 100px; 
+      height: auto; 
+      margin-right: 10px; 
+    }
+
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70vh;
+    }
+    #loginForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+    }
+    #loginForm input {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #loginForm button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+    #loginForm button:hover {
+      background-color: #308635;
+    }
+    .error-message {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="images\promo-image.png" width="500" height="400" alt="Logo"> 
+      <h1>THE PERFUME VAULT</h1>
+    </div>
+  </header>
+
+  <main class="login-container">
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginError" class="error-message"></p>
+  </main>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (username === 'buyer' && password === 'buyer123') {
+        window.location.href = 'buyer.html';
+      } else if (username === 'seller' && password === 'seller123') {
+        window.location.href = 'seller.html';
+      } else {
+        document.getElementById('loginError').textContent = 'Invalid credentials. Try again!';
+      }
+    });
+  </script>
+</body>
+</html>

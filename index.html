@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>THE PERFUME VAULT</title>
+  <style>
+    .logo-container {
+      display: flex;
+      align-items: center; /* Vertically center the items */
+    }
+    .logo-container img {
+      width: 100px; /* Adjust width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px; /* Space between logo and text */
+    }
+    
+  
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh; /* Adjust this value to move the buttons up or down */
+    }
+    .buttons {
+      text-align: center;
+    }
+    h2 {
+      text-align: center; /* Center the heading */
+      color: black; /* Change text color to black */
+      margin: 20px 0; /* Add some margin for spacing */
+    }
+
+  
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="top-bar">
+      <p>$11.25 gift set + $5.95 mists • Code: <strong>Vtwo</strong> • <a href="#">*Promo Details</a></p>
+    </div>
+
+    <nav class="main-nav">
+      <div class="nav-links">
+        <a href="#">Top Offers</a>
+        <a href="#">Holiday Shop</a>
+        <a href="#">Mists</a>
+        <a href="#">Travel Size Mists</a>
+        <a href="#">Perfume Sets</a>
+        <a href="#">Men's Collection</a>
+      </div>
+      <div class="nav-icons">
+        <input type="text" placeholder="Search by fragrance or product">
+        <button class="search-button">🔍</button>
+        <a href="login.html">👤</a>
+        <a href="#">🛒 (0)</a>
+      </div>
+    </nav>
+    <div class="promo-bar">
+      <p>Limited time only! In stores & online! Get 3X Rewards points on all gift sets. <a href="#">*Promo Details</a></p>
+    </div>
+    <div class="logo-container">
+      <img src="images\promo-image.png" width="500" height="400" alt="Logo"> 
+      <h1>THE PERFUME VAULT</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="buttons">
+      <a href="login.html" class="home-button seller-button">Login as Seller</a>
+      <a href="login.html" class="home-button buyer-button">Login as Buyer</a>
+    </div>
+
+    <h2>Available Products</h2>
+    <div id="productList" class="product-list"></div>
+    <div id="productList" class="product-list">
+
+    <!-- Perfume 1 -->
+    <div class="product-card">
+      <img src="images\perfume1.jpg" alt="Chanel No. 5">
+      <h3>Chanel No. 5</h3>
+      <p>Brand: Chanel</p>
+      <p>Price: $105</p>
+      <p>Rating: 4/5</p>
+      <span class="label">Classic</span>
+    </div>
+  
+    <!-- Perfume 2 -->
+    <div class="product-card">
+      <img src="images\perfume2.jpg" alt="J'adore">
+      <h3>J'adore</h3>
+      <p>Brand: Dior</p>
+      <p>Price: $95</p>
+      <p>Rating: 3/5</p>
+      <span class="label">Floral</span>
+    </div>
+  
+    <!-- Perfume 3 -->
+    <div class="product-card">
+      <img src="images\perfume3.jpg" alt="Black Opium">
+      <h3>Black Opium</h3>
+      <p>Brand: Yves Saint Laurent</p>
+      <p>Price: $78</p>
+      <p>Rating: 4/5</p>
+      <span class="label">Oriental</span>
+    </div>
+  
+    <!-- Perfume 4 -->
+    <div class="product-card">
+      <img src="images\perfume4.jpg" alt="La Vie Est Belle">
+      <h3>La Vie Est Belle</h3>
+      <p>Brand: Lancôme</p>
+      <p>Price: $88</p>
+      <p>Rating: 3/5</p>
+      <span class="label">Sweet</span>
+    </div>
+  
+    <!-- Perfume 5 -->
+    <div class="product-card">
+      <img src="images\perfume5.jpg" alt="Light Blue">
+      <h3>Light Blue</h3>
+      <p>Brand: Dolce & Gabbana</p>
+      <p>Price: $76</p>
+      <p>Rating: 4/5</p>
+      <span class="label">Fresh</span>
+    </div>
+  
+    <!-- Perfume 6 -->
+    <div class="product-card">
+      <img src="images\perfume6.jpg" alt="Flowerbomb">
+      <h3>Flowerbomb</h3>
+      <p>Brand: Viktor & Rolf</p>
+      <p>Price: $115</p>
+      <p>Rating: 5/5</p>
+      <span class="label">Floral</span>
+    </div>
+  
+    <!-- Perfume 7 -->
+    <div class="product-card">
+      <img src="images\perfume7.jpg" alt="Acqua di Gio">
+      <h3>Acqua di Gio</h3>
+      <p>Brand: Giorgio Armani</p>
+      <p>Price: $90</p>
+      <p>Rating: 3/5</p>
+      <span class="label">Aquatic</span>
+    </div>
+  
+    <!-- Perfume 8 -->
+    <div class="product-card">
+      <img src="images\perfume8.jpg" alt="Bleu de Chanel">
+      <h3>Bleu de Chanel</h3>
+      <p>Brand: Chanel</p>
+      <p>Price: $95</p>
+      <p>Rating: 4/5</p>
+      <span class="label">Woody</span>
+    </div>
+  
+    <!-- Perfume 9 -->
+    <div class="product-card">
+      <img src="images\perfume9.jpg" alt="Miss Dior">
+      <h3>Miss Dior</h3>
+      <p>Brand: Dior</p>
+      <p>Price: $100</p>
+      <p>Rating: 5/5</p>
+      <span class="label">Chypre</span>
+    </div>
+  
+    <!-- Perfume 10 -->
+    <div class="product-card">
+      <img src="images\perfume10.jpg" alt="Sì">
+      <h3>Sì</h3>
+      <p>Brand: Giorgio Armani</p>
+      <p>Price: $92</p>
+      <p>Rating: 5/5</p>
+      <span class="label">Fruity</span>
+    </div>
+
+
+    <div class="product-card">
+      <img src="images\perfume11.jpg" alt="Sì">
+      <h3>h2o</h3>
+      <p>Brand: rakuten </p>
+      <p>Price: $72</p>
+      <p>Rating: 3/5</p>
+      <span class="label">Fruity</span>
+    </div>
+
+
+    <div class="product-card">
+      <img src="images\perfume12.jpg" alt="Sì">
+      <h3>Cocoa Bear</h3>
+      <p>Brand: Zjio</p>
+      <p>Price: $52</p>
+      <p>Rating: 3/5</p>
+      <span class="label">Fruity</span>
+    </div>
+  </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', loadProductsForHomePage);
+  </script>
+</body>
+</html>
